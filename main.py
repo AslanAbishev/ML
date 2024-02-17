@@ -112,7 +112,7 @@ loss_fn = nn.CrossEntropyLoss()
 
 optimizer = opt.SGD(resnet18_model.parameters(), lr=0.01, momentum=0.9, weight_decay=0.003)
 
-train_nn(resnet18_model, train_loader, test_loader, loss_fn, optimizer, 5)
+train_nn(resnet18_model, train_loader, test_loader, loss_fn, optimizer, 20)
 
 checkpoint = torch.load('model_best_checkpoint.pth.tar')
 

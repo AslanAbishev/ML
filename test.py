@@ -21,4 +21,4 @@ def classify(model, image_transform, image_path, classes):
     _, predicted = torch.max(output.data, 1)
     print(classes[predicted.item()])
     
-classify(model, transforms, 'test/O4_jpg.rf.82c403d496488192d134b233a080d258.jpg', classes)
+classify(model, transforms, 'img.png', classes)
